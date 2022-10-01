@@ -6,9 +6,9 @@ from email.message import EmailMessage
 import smtplib
 
 #Estabishing vars for email
-sender = ""
-password = ""
-receiver = ""
+sender = "Sender email"
+password = "Sender password"
+receiver = "Receiver email"
 open("info.txt", "w")
 
 #Crafting email
