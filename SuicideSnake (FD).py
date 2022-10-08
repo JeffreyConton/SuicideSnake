@@ -10,9 +10,9 @@ import smtplib
 now = datetime.now()
 dt_string = now.strftime("%d/%m/%Y %H:%M:%S")
 info = ""
-sender = "Sender email"
-password = "Sender email password"
-receiver = "Receiver email"
+sender = "Sender email (REPLACE THIS)"
+password = "Sender email password (REPLACE THIS)"
+receiver = "Receiver email (REPLACE THIS)"
 open("info.txt", "w")
 
 #Crafting email
